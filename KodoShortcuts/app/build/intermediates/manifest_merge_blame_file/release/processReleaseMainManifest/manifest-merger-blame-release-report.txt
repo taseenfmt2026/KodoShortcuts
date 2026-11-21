@@ -1,0 +1,177 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="shortcuts.kodo.locations"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:5:5-78
+11-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:7:5-80
+12-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:7:22-78
+13    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+13-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:9:5-84
+13-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:9:22-82
+14    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+14-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:11:5-80
+14-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:11:22-78
+15    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+15-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:13:5-79
+15-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:13:22-77
+16    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+16-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:15:5-84
+16-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:15:22-82
+17
+18    <permission
+18-->[androidx.core:core:1.17.0] /home/codespace/.gradle/caches/8.13/transforms/b786e9722733b73559cc9b39aa54bcf2/transformed/core-1.17.0/AndroidManifest.xml:22:5-24:47
+19        android:name="shortcuts.kodo.locations.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+19-->[androidx.core:core:1.17.0] /home/codespace/.gradle/caches/8.13/transforms/b786e9722733b73559cc9b39aa54bcf2/transformed/core-1.17.0/AndroidManifest.xml:23:9-81
+20        android:protectionLevel="signature" />
+20-->[androidx.core:core:1.17.0] /home/codespace/.gradle/caches/8.13/transforms/b786e9722733b73559cc9b39aa54bcf2/transformed/core-1.17.0/AndroidManifest.xml:24:9-44
+21
+22    <uses-permission android:name="shortcuts.kodo.locations.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+22-->[androidx.core:core:1.17.0] /home/codespace/.gradle/caches/8.13/transforms/b786e9722733b73559cc9b39aa54bcf2/transformed/core-1.17.0/AndroidManifest.xml:26:5-97
+22-->[androidx.core:core:1.17.0] /home/codespace/.gradle/caches/8.13/transforms/b786e9722733b73559cc9b39aa54bcf2/transformed/core-1.17.0/AndroidManifest.xml:26:22-94
+23
+24    <application
+24-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:17:5-50:19
+25        android:allowBackup="true"
+25-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:18:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.17.0] /home/codespace/.gradle/caches/8.13/transforms/b786e9722733b73559cc9b39aa54bcf2/transformed/core-1.17.0/AndroidManifest.xml:28:18-86
+27        android:extractNativeLibs="false"
+28        android:label="Kodo Shortcuts"
+28-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:19:9-39
+29        android:theme="@style/Theme.KodoShortcuts" >
+29-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:20:9-51
+30        <activity
+30-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:22:9-32:20
+31            android:name="shortcuts.kodo.locations.MainActivity"
+31-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:23:13-41
+32            android:exported="true" >
+32-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:24:13-36
+33            <intent-filter>
+33-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:26:13-30:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:27:17-68
+34-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:27:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:29:17-76
+36-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:29:27-74
+37            </intent-filter>
+38        </activity>
+39
+40        <receiver
+40-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:34:9-37:39
+41            android:name="shortcuts.kodo.locations.GeofenceReceiver"
+41-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:35:13-45
+42            android:enabled="true"
+42-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:36:13-35
+43            android:exported="false" />
+43-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:37:13-37
+44        <receiver
+44-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:39:9-48:20
+45            android:name="shortcuts.kodo.locations.GeofenceReceiver$BootReceiver"
+45-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:40:13-58
+46            android:enabled="true"
+46-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:41:13-35
+47            android:exported="true" >
+47-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:42:13-36
+48            <intent-filter>
+48-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:44:13-46:29
+49                <action android:name="android.intent.action.BOOT_COMPLETED" />
+49-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:45:17-78
+49-->/workspaces/codespaces-blank/KodoShortcuts/app/src/main/AndroidManifest.xml:45:25-76
+50            </intent-filter>
+51        </receiver>
+52
+53        <activity
+53-->[com.google.android.gms:play-services-base:18.5.0] /home/codespace/.gradle/caches/8.13/transforms/71e6426ff3a294216064c9030074193e/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+54            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+54-->[com.google.android.gms:play-services-base:18.5.0] /home/codespace/.gradle/caches/8.13/transforms/71e6426ff3a294216064c9030074193e/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+55            android:exported="false"
+55-->[com.google.android.gms:play-services-base:18.5.0] /home/codespace/.gradle/caches/8.13/transforms/71e6426ff3a294216064c9030074193e/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+56            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+56-->[com.google.android.gms:play-services-base:18.5.0] /home/codespace/.gradle/caches/8.13/transforms/71e6426ff3a294216064c9030074193e/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+57
+58        <meta-data
+58-->[com.google.android.gms:play-services-basement:18.4.0] /home/codespace/.gradle/caches/8.13/transforms/fdad185dddf53a0be7ef8ee0da1ce52f/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
+59            android:name="com.google.android.gms.version"
+59-->[com.google.android.gms:play-services-basement:18.4.0] /home/codespace/.gradle/caches/8.13/transforms/fdad185dddf53a0be7ef8ee0da1ce52f/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
+60            android:value="@integer/google_play_services_version" />
+60-->[com.google.android.gms:play-services-basement:18.4.0] /home/codespace/.gradle/caches/8.13/transforms/fdad185dddf53a0be7ef8ee0da1ce52f/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+61
+62        <provider
+62-->[androidx.emoji2:emoji2:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/23e5527346a0773666d1517f989267fb/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+63            android:name="androidx.startup.InitializationProvider"
+63-->[androidx.emoji2:emoji2:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/23e5527346a0773666d1517f989267fb/transformed/emoji2-1.4.0/AndroidManifest.xml:25:13-67
+64            android:authorities="shortcuts.kodo.locations.androidx-startup"
+64-->[androidx.emoji2:emoji2:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/23e5527346a0773666d1517f989267fb/transformed/emoji2-1.4.0/AndroidManifest.xml:26:13-68
+65            android:exported="false" >
+65-->[androidx.emoji2:emoji2:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/23e5527346a0773666d1517f989267fb/transformed/emoji2-1.4.0/AndroidManifest.xml:27:13-37
+66            <meta-data
+66-->[androidx.emoji2:emoji2:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/23e5527346a0773666d1517f989267fb/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+67                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+67-->[androidx.emoji2:emoji2:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/23e5527346a0773666d1517f989267fb/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
+68                android:value="androidx.startup" />
+68-->[androidx.emoji2:emoji2:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/23e5527346a0773666d1517f989267fb/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
+69            <meta-data
+69-->[androidx.lifecycle:lifecycle-process:2.9.4] /home/codespace/.gradle/caches/8.13/transforms/4cba1794018a19f05c1e503c931bae09/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:29:13-31:52
+70                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+70-->[androidx.lifecycle:lifecycle-process:2.9.4] /home/codespace/.gradle/caches/8.13/transforms/4cba1794018a19f05c1e503c931bae09/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:30:17-78
+71                android:value="androidx.startup" />
+71-->[androidx.lifecycle:lifecycle-process:2.9.4] /home/codespace/.gradle/caches/8.13/transforms/4cba1794018a19f05c1e503c931bae09/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:31:17-49
+72            <meta-data
+72-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/b1aa8d611f30a8f6c8aae2842042da2e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+73                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+73-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/b1aa8d611f30a8f6c8aae2842042da2e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+74                android:value="androidx.startup" />
+74-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/b1aa8d611f30a8f6c8aae2842042da2e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+75        </provider>
+76
+77        <receiver
+77-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/b1aa8d611f30a8f6c8aae2842042da2e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+78            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+78-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/b1aa8d611f30a8f6c8aae2842042da2e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+79            android:directBootAware="false"
+79-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/b1aa8d611f30a8f6c8aae2842042da2e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+80            android:enabled="true"
+80-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/b1aa8d611f30a8f6c8aae2842042da2e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+81            android:exported="true"
+81-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/b1aa8d611f30a8f6c8aae2842042da2e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+82            android:permission="android.permission.DUMP" >
+82-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/b1aa8d611f30a8f6c8aae2842042da2e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+83            <intent-filter>
+83-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/b1aa8d611f30a8f6c8aae2842042da2e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+84                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+84-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/b1aa8d611f30a8f6c8aae2842042da2e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+84-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/b1aa8d611f30a8f6c8aae2842042da2e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+85            </intent-filter>
+86            <intent-filter>
+86-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/b1aa8d611f30a8f6c8aae2842042da2e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+87                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+87-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/b1aa8d611f30a8f6c8aae2842042da2e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+87-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/b1aa8d611f30a8f6c8aae2842042da2e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+88            </intent-filter>
+89            <intent-filter>
+89-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/b1aa8d611f30a8f6c8aae2842042da2e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+90                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+90-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/b1aa8d611f30a8f6c8aae2842042da2e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+90-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/b1aa8d611f30a8f6c8aae2842042da2e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+91            </intent-filter>
+92            <intent-filter>
+92-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/b1aa8d611f30a8f6c8aae2842042da2e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+93                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+93-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/b1aa8d611f30a8f6c8aae2842042da2e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+93-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/codespace/.gradle/caches/8.13/transforms/b1aa8d611f30a8f6c8aae2842042da2e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+94            </intent-filter>
+95        </receiver>
+96    </application>
+97
+98</manifest>
